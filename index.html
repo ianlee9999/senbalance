@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>三重運動按摩｜森平衡 SEN BALANCE</title>
+    <meta
+      name="description"
+      content="森平衡位於新北市三重區，提供運動按摩、筋膜放鬆與動作引導。適合久坐上班族、電腦族、肩頸緊繃、腰背卡卡、運動後緊繃與想找回身體平衡的人，預約前可先詢問適合項目。"
+    />
+    <meta name="theme-color" content="#315342" />
+    <meta property="og:title" content="三重運動按摩｜森平衡 SEN BALANCE" />
+    <meta
+      property="og:description"
+      content="運動按摩、筋膜放鬆與身體使用方式觀察，讓身體回到比較自然、穩定、舒服的節奏。"
+    />
+    <meta property="og:type" content="website" />
+    <style>
+      :root {
+        --forest: #315342;
+        --moss: #6f8069;
+        --leaf: #dce6d8;
+        --clay: #b28667;
+        --mist: #eef3f0;
+        --paper: #fbfaf6;
+        --warm: #f3eadf;
+        --ink: #222521;
+        --muted: #686d63;
+        --line: rgba(49, 83, 66, 0.18);
+        --shadow: 0 20px 60px rgba(34, 37, 33, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang TC",
+          "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+        line-height: 1.75;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .site-nav {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px clamp(18px, 5vw, 56px);
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 250, 246, 0.92);
+        backdrop-filter: blur(16px);
+      }
+
+      .brand-mark {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+        text-decoration: none;
+      }
+
+      .brand-mark svg {
+        width: 42px;
+        height: 42px;
+        flex: 0 0 auto;
+      }
+
+      .brand-name {
+        display: grid;
+        line-height: 1.2;
+      }
+
+      .brand-name strong {
+        color: var(--forest);
+        font-size: 18px;
+        letter-spacing: 0.08em;
+      }
+
+      .brand-name span {
+        color: var(--muted);
+        font-size: 11px;
+        letter-spacing: 0.22em;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 12px 22px;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+
+      .btn-primary {
+        background: var(--forest);
+        color: #fff;
+      }
+
+      .btn-primary:hover {
+        background: #233d31;
+      }
+
+      .btn-secondary {
+        border-color: var(--line);
+        background: rgba(255, 255, 255, 0.5);
+        color: var(--forest);
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        min-height: 92vh;
+        padding: clamp(64px, 9vw, 118px) clamp(20px, 6vw, 76px) 64px;
+        background:
+          linear-gradient(120deg, rgba(238, 243, 240, 0.9), rgba(251, 250, 246, 0.72)),
+          linear-gradient(90deg, rgba(49, 83, 66, 0.06) 1px, transparent 1px),
+          linear-gradient(0deg, rgba(49, 83, 66, 0.04) 1px, transparent 1px);
+        background-size: auto, 76px 76px, 76px 76px;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        right: -12vw;
+        top: 18vh;
+        width: 48vw;
+        height: 48vw;
+        max-width: 620px;
+        max-height: 620px;
+        border: 1px solid rgba(49, 83, 66, 0.18);
+        border-radius: 50%;
+      }
+
+      .hero-inner {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+        align-items: center;
+        gap: clamp(32px, 7vw, 86px);
+        max-width: 1160px;
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: var(--clay);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.22em;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin-bottom: 24px;
+        color: var(--forest);
+        font-size: clamp(40px, 7vw, 76px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .hero-copy {
+        max-width: 660px;
+        margin-bottom: 34px;
+        color: #4f584d;
+        font-size: clamp(17px, 2.2vw, 22px);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+
+      .hero-points {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .hero-points span {
+        padding: 6px 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.62);
+      }
+
+      .logo-panel {
+        display: grid;
+        place-items: center;
+        min-height: 420px;
+        padding: 34px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background:
+          linear-gradient(150deg, rgba(255, 255, 255, 0.88), rgba(238, 243, 240, 0.68)),
+          repeating-linear-gradient(135deg, transparent 0, transparent 18px, rgba(178, 134, 103, 0.06) 19px);
+        box-shadow: var(--shadow);
+      }
+
+      .logo-panel svg {
+        width: min(78%, 300px);
+        height: auto;
+      }
+
+      .logo-panel .tagline {
+        margin: 22px 0 0;
+        color: var(--forest);
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      section {
+        padding: clamp(64px, 9vw, 104px) clamp(20px, 6vw, 76px);
+      }
+
+      .section-inner {
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(260px, 0.65fr);
+        gap: 32px;
+        align-items: end;
+        margin-bottom: 36px;
+      }
+
+      .section-head h2 {
+        margin-bottom: 0;
+        color: var(--forest);
+        font-size: clamp(30px, 4vw, 48px);
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      .section-head p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .pain-grid,
+      .process-grid,
+      .price-grid,
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .item,
+      .price-card,
+      details {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .item {
+        min-height: 180px;
+        padding: 24px;
+      }
+
+      .item .num {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: var(--clay);
+        font-weight: 800;
+      }
+
+      .item h3 {
+        margin-bottom: 10px;
+        color: var(--forest);
+        font-size: 21px;
+      }
+
+      .item p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .band {
+        background: var(--mist);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .process-card {
+        padding: 24px;
+        border-left: 3px solid var(--forest);
+        background: rgba(255, 255, 255, 0.56);
+      }
+
+      .process-card h3 {
+        margin-bottom: 8px;
+        color: var(--forest);
+      }
+
+      .process-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .pricing {
+        background: linear-gradient(180deg, #fff, var(--paper));
+      }
+
+      .price-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+      }
+
+      .price-card {
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+
+      .price-head {
+        padding: 24px;
+        background: var(--forest);
+        color: #fff;
+      }
+
+      .price-head h3 {
+        margin-bottom: 4px;
+        font-size: 24px;
+      }
+
+      .price-head p {
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .price-list {
+        display: grid;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .price-list li {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 24px;
+        border-top: 1px solid var(--line);
+      }
+
+      .price-list strong {
+        color: var(--forest);
+        font-size: 24px;
+        white-space: nowrap;
+      }
+
+      .trial strong {
+        color: #c54848;
+      }
+
+      .note {
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .audience {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.7fr);
+        gap: 36px;
+        align-items: center;
+      }
+
+      .audience-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .audience-list li {
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.62);
+        color: var(--forest);
+        font-weight: 700;
+      }
+
+      .quote-panel {
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--forest);
+        color: #fff;
+      }
+
+      .quote-panel p {
+        margin-bottom: 14px;
+        font-size: 22px;
+        line-height: 1.55;
+      }
+
+      .quote-panel span {
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      details {
+        padding: 0;
+      }
+
+      summary {
+        cursor: pointer;
+        padding: 20px 22px;
+        color: var(--forest);
+        font-weight: 800;
+      }
+
+      details p {
+        margin: 0;
+        padding: 0 22px 22px;
+        color: var(--muted);
+      }
+
+      .location {
+        background: #1f2923;
+        color: #fff;
+      }
+
+      .location .section-head h2,
+      .location .eyebrow {
+        color: #fff;
+      }
+
+      .location .section-head p {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .location-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(260px, 0.6fr);
+        gap: 22px;
+      }
+
+      .location-card {
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .location-card h3 {
+        margin-bottom: 8px;
+        color: #fff;
+      }
+
+      .location-card p {
+        margin-bottom: 18px;
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .final-cta {
+        text-align: center;
+      }
+
+      .final-cta h2 {
+        margin-bottom: 18px;
+        color: var(--forest);
+        font-size: clamp(34px, 5vw, 58px);
+        line-height: 1.18;
+      }
+
+      .final-cta p {
+        max-width: 620px;
+        margin: 0 auto 28px;
+        color: var(--muted);
+      }
+
+      footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 28px clamp(20px, 6vw, 76px);
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      footer a {
+        color: var(--forest);
+        text-decoration: none;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 30;
+        display: none;
+        box-shadow: 0 12px 32px rgba(34, 37, 33, 0.18);
+      }
+
+      @media (max-width: 900px) {
+        .nav-links a:not(.btn) {
+          display: none;
+        }
+
+        .hero-inner,
+        .section-head,
+        .audience,
+        .location-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .logo-panel {
+          min-height: 300px;
+        }
+
+        .pain-grid,
+        .process-grid,
+        .price-grid,
+        .faq-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .audience-list {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .site-nav {
+          padding: 12px 16px;
+        }
+
+        .brand-name strong {
+          font-size: 16px;
+        }
+
+        .nav-links .btn {
+          min-height: 42px;
+          padding: 8px 14px;
+          font-size: 13px;
+        }
+
+        .hero {
+          min-height: auto;
+          padding-top: 48px;
+        }
+
+        .hero-actions .btn,
+        .final-cta .btn {
+          width: 100%;
+        }
+
+        .price-list li {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .mobile-cta {
+          display: inline-flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="主選單">
+      <a class="brand-mark" href="#top" aria-label="森平衡首頁">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="52" fill="#fbfaf6" stroke="#315342" stroke-width="5" />
+          <path d="M38 34c12 10 21 10 34 0 7 7 12 10 20 10" fill="none" stroke="#315342" stroke-width="6" stroke-linecap="round" />
+          <path d="M36 59c12 0 13-13 25-13s13 13 25 13" fill="none" stroke="#315342" stroke-width="6" stroke-linecap="round" />
+          <path d="M32 76c16 0 17-12 32-12s16 12 32 12" fill="none" stroke="#315342" stroke-width="6" stroke-linecap="round" />
+          <path d="M60 44v18M43 82v-14M79 82v-14" stroke="#315342" stroke-width="6" stroke-linecap="round" />
+          <circle cx="50" cy="40" r="4" fill="#315342" />
+          <circle cx="70" cy="40" r="4" fill="#315342" />
+        </svg>
+        <span class="brand-name">
+          <strong>森平衡</strong>
+          <span>SEN BALANCE</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="#services">服務</a>
+        <a href="#pricing">價目</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary js-line-link" href="#line">加 LINE 預約</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <p class="eyebrow">三重運動按摩 · 筋膜放鬆 · 功能訓練</p>
+            <h1>讓身體回到比較自然、舒服的節奏。</h1>
+            <p class="hero-copy">
+              久坐、低頭、長時間用電腦，身體會慢慢累積緊繃。森平衡透過運動按摩、筋膜放鬆與動作觀察，陪你重新感覺身體怎麼用力、怎麼放鬆。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary js-line-link" href="#line">預約身體放鬆</a>
+              <a class="btn btn-secondary" href="#pricing">查看方案</a>
+            </div>
+            <div class="hero-points" aria-label="服務特色">
+              <span>新北三重</span>
+              <span>60 分鐘課程</span>
+              <span>不強迫推銷</span>
+              <span>適合電腦族與上班族</span>
+            </div>
+          </div>
+          <div class="logo-panel" aria-label="森平衡品牌圖像">
+            <div>
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <circle cx="60" cy="60" r="52" fill="#fbfaf6" stroke="#315342" stroke-width="5" />
+                <path d="M38 34c12 10 21 10 34 0 7 7 12 10 20 10" fill="none" stroke="#315342" stroke-width="6" stroke-linecap="round" />
+                <path d="M36 59c12 0 13-13 25-13s13 13 25 13" fill="none" stroke="#315342" stroke-width="6" stroke-linecap="round" />
+                <path d="M32 76c16 0 17-12 32-12s16 12 32 12" fill="none" stroke="#315342" stroke-width="6" stroke-linecap="round" />
+                <path d="M60 44v18M43 82v-14M79 82v-14" stroke="#315342" stroke-width="6" stroke-linecap="round" />
+                <circle cx="50" cy="40" r="4" fill="#315342" />
+                <circle cx="70" cy="40" r="4" fill="#315342" />
+              </svg>
+              <p class="tagline">靜心入森 · 平衡自現</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">你是不是也這樣？</p>
+              <h2>不是只有痛的地方需要被照顧。</h2>
+            </div>
+            <p>
+              很多痠、緊、卡卡的感覺，常常跟長期姿勢、受力習慣與身體使用方式有關。先讓身體慢下來，才有機會重新找到平衡。
+            </p>
+          </div>
+          <div class="pain-grid">
+            <article class="item">
+              <span class="num">01</span>
+              <h3>肩頸總是繃著</h3>
+              <p>久坐、低頭、滑手機，一整天都像在替身體硬撐。</p>
+            </article>
+            <article class="item">
+              <span class="num">02</span>
+              <h3>腰背容易卡卡</h3>
+              <p>坐久起身不太順，活動一下才慢慢比較舒服。</p>
+            </article>
+            <article class="item">
+              <span class="num">03</span>
+              <h3>運動後恢復慢</h3>
+              <p>有運動習慣，但某些角度總覺得緊、受限、不順。</p>
+            </article>
+            <article class="item">
+              <span class="num">04</span>
+              <h3>腳底或膝蓋有壓力</h3>
+              <p>扁平足、高足弓或走路受力不均，可能讓全身一起代償。</p>
+            </article>
+            <article class="item">
+              <span class="num">05</span>
+              <h3>按摩完很快又緊</h3>
+              <p>身體舒服一下，但日常用力方式沒有改變，緊繃容易回來。</p>
+            </article>
+            <article class="item">
+              <span class="num">06</span>
+              <h3>想更懂自己的身體</h3>
+              <p>不只是被動放鬆，也想知道平常可以怎麼保養。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="services">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">森平衡的方式</p>
+              <h2>放鬆、觀察、引導，再回到日常。</h2>
+            </div>
+            <p>
+              我們不是只追求按得很痛，而是透過身體狀態觀察與放鬆手法，讓你知道緊繃從哪裡開始累積，也學會簡單照顧自己。
+            </p>
+          </div>
+          <div class="process-grid">
+            <article class="process-card">
+              <h3>01 了解狀態</h3>
+              <p>先聊工作型態、運動習慣與目前最在意的活動感受。</p>
+            </article>
+            <article class="process-card">
+              <h3>02 放鬆緊繃</h3>
+              <p>運用運動按摩、筋膜放鬆與徒手放鬆，降低身體壓力感。</p>
+            </article>
+            <article class="process-card">
+              <h3>03 動作引導</h3>
+              <p>加入簡單動作、呼吸或感覺練習，找回比較順的出力方式。</p>
+            </article>
+            <article class="process-card">
+              <h3>04 居家保養</h3>
+              <p>依照你的生活節奏，提供容易執行的放鬆與活動建議。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">價目方案</p>
+              <h2>選一個適合現在身體狀態的開始。</h2>
+            </div>
+            <p>
+              第一次不知道怎麼選，可以先從體驗課開始。實際了解身體狀況後，再討論適合你的保養節奏。
+            </p>
+          </div>
+          <div class="price-grid">
+            <article class="price-card">
+              <div class="price-head">
+                <h3>運動按摩 & 運動訓練</h3>
+                <p>60 分鐘</p>
+              </div>
+              <ul class="price-list">
+                <li class="trial"><span>體驗課</span><strong>$1,400</strong></li>
+                <li><span>單堂課</span><strong>$2,200</strong></li>
+                <li><span>五堂課</span><strong>$9,500</strong></li>
+                <li><span>十堂課</span><strong>$17,000</strong></li>
+              </ul>
+            </article>
+            <article class="price-card">
+              <div class="price-head">
+                <h3>身體平衡調整</h3>
+                <p>60 分鐘</p>
+              </div>
+              <ul class="price-list">
+                <li class="trial"><span>體驗課</span><strong>$1,800</strong></li>
+                <li><span>單堂課</span><strong>$2,600</strong></li>
+                <li><span>三堂課</span><strong>$6,300</strong></li>
+              </ul>
+            </article>
+          </div>
+          <p class="note">
+            不只運動員，久坐或常用力也會累。課程以深層放鬆加上簡單動作引導，讓緊繃感慢慢退下來。若有外傷、麻木、術後或長期劇烈疼痛，建議先由合格醫療專業人員評估。
+          </p>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section-inner audience">
+          <div>
+            <p class="eyebrow">適合對象</p>
+            <h2>給長時間用同一種姿勢生活的人。</h2>
+            <p>
+              森平衡特別適合每天坐很久、盯螢幕很久、或已經習慣把緊繃當日常的人。你不需要等到身體很不舒服，才開始保養。
+            </p>
+            <ul class="audience-list">
+              <li>久坐上班族</li>
+              <li>工程師與設計師</li>
+              <li>電腦族肩頸緊繃</li>
+              <li>腰背卡卡的人</li>
+              <li>運動後容易緊繃</li>
+              <li>想改善活動感受</li>
+            </ul>
+          </div>
+          <aside class="quote-panel">
+            <p>「放鬆不是偷懶，是讓身體有機會換一種節奏。」</p>
+            <span>森平衡，讓節奏回到適合的地方。</span>
+          </aside>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">常見問題</p>
+              <h2>來之前，你可能想知道。</h2>
+            </div>
+            <p>
+              第一次來不用準備太多。穿著方便活動的衣服，帶著你現在最想處理的身體感受來就可以。
+            </p>
+          </div>
+          <div class="faq-grid">
+            <details>
+              <summary>會很痛嗎？</summary>
+              <p>不會刻意追求痛感。過程會依照你的感受調整力道，目標是讓身體比較能放鬆，而不是硬忍。</p>
+            </details>
+            <details>
+              <summary>第一次適合選哪個方案？</summary>
+              <p>若你主要想放鬆肩頸、腰背或運動後緊繃，可先選運動按摩體驗。若想更完整看身體受力與動作感受，可選身體平衡調整體驗。</p>
+            </details>
+            <details>
+              <summary>跟一般按摩有什麼不同？</summary>
+              <p>森平衡會加入身體使用方式觀察、動作引導與簡單居家保養建議，不只是把單一部位按鬆。</p>
+            </details>
+            <details>
+              <summary>沒有運動習慣也可以嗎？</summary>
+              <p>可以。很多緊繃其實來自久坐與長時間工作，不一定是運動造成。課程會依你的程度調整。</p>
+            </details>
+            <details>
+              <summary>需要固定多久來一次？</summary>
+              <p>會依照你的身體狀態、生活壓力與預算討論。森平衡不強迫後續，以你能持續的節奏為主。</p>
+            </details>
+            <details>
+              <summary>怎麼預約？</summary>
+              <p>可透過 LINE 詢問適合項目與可預約時段。若 LINE 連結尚未更新，也可以先從 IG 私訊森平衡。</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="location" id="location">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">位置與預約</p>
+              <h2>森平衡在新北三重。</h2>
+            </div>
+            <p>
+              預約前可以先簡單描述你的狀態，例如肩頸緊、腰背卡、久坐、運動後緊繃，讓我們協助你判斷適合的課程。
+            </p>
+          </div>
+          <div class="location-grid">
+            <article class="location-card">
+              <h3>地址</h3>
+              <p>新北市三重區重新路三段198號1樓</p>
+              <a
+                class="btn btn-secondary"
+                href="https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%8C%97%E5%B8%82%E4%B8%89%E9%87%8D%E5%8D%80%E9%87%8D%E6%96%B0%E8%B7%AF%E4%B8%89%E6%AE%B5198%E8%99%9F1%E6%A8%93"
+                target="_blank"
+                rel="noopener"
+              >查看地圖</a>
+            </article>
+            <article class="location-card" id="line">
+              <h3>預約方式</h3>
+              <p>加 LINE 詢問適合項目與可預約時段。LINE 連結目前尚待補上，網站已預留一處集中設定。</p>
+              <a class="btn btn-primary js-line-link" href="#line">加 LINE 預約</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="section-inner">
+          <p class="eyebrow">準備讓身體喘一口氣嗎？</p>
+          <h2>先從一次身體放鬆開始。</h2>
+          <p>
+            不需要先懂很多專有名詞。你只要帶著現在的身體感受來，我們從觀察、放鬆和簡單動作開始。
+          </p>
+          <a class="btn btn-primary js-line-link" href="#line">詢問適合項目</a>
+        </div>
+      </section>
+    </main>
+
+    <a class="btn btn-primary mobile-cta js-line-link" href="#line">加 LINE 預約</a>
+
+    <footer>
+      <span>SEN BALANCE 森平衡</span>
+      <span>
+        <a href="https://www.instagram.com/senbalance198/" target="_blank" rel="noopener">Instagram @senbalance198</a>
+        ·
+        <a href="https://www.threads.com/@senbalance198" target="_blank" rel="noopener">Threads</a>
+      </span>
+    </footer>
+
+    <script>
+      const LINE_URL = "";
+
+      document.querySelectorAll(".js-line-link").forEach((link) => {
+        if (LINE_URL) {
+          link.href = LINE_URL;
+          link.target = "_blank";
+          link.rel = "noopener";
+          return;
+        }
+
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          alert("LINE 連結尚未設定。請先把官方帳號連結填入 index.html 的 LINE_URL。");
+        });
+      });
+    </script>
+  </body>
+</html>
