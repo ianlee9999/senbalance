@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>森平衡圖卡</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        background: #f8f6ef;
+        color: #374234;
+        font-family: "Microsoft JhengHei UI", "Noto Sans TC", sans-serif;
+      }
+
+      .card {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        padding: 110px 88px 76px;
+      }
+
+      h1 {
+        margin: 0 auto;
+        max-width: 900px;
+        color: #345342;
+        font-size: 58px;
+        line-height: 1.28;
+        text-align: center;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        margin-top: 34px;
+        color: #373732;
+        font-size: 34px;
+        line-height: 1.45;
+        text-align: center;
+      }
+
+      .rule {
+        width: 720px;
+        height: 4px;
+        margin: 46px auto 0;
+        background: #b69d7e;
+      }
+
+      .scene {
+        position: absolute;
+        left: 152px;
+        top: 540px;
+        width: 790px;
+        height: 470px;
+      }
+
+      .desk {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 82px;
+        height: 6px;
+        background: #8a7e6c;
+        border-radius: 999px;
+      }
+
+      .monitor {
+        position: absolute;
+        right: 76px;
+        top: 68px;
+        width: 244px;
+        height: 166px;
+        border: 6px solid #345342;
+        border-radius: 10px;
+      }
+
+      .monitor::before {
+        content: "";
+        position: absolute;
+        left: 112px;
+        top: 164px;
+        width: 6px;
+        height: 164px;
+        background: #345342;
+      }
+
+      .monitor::after {
+        content: "";
+        position: absolute;
+        left: 50px;
+        top: 326px;
+        width: 140px;
+        height: 6px;
+        background: #345342;
+        border-radius: 999px;
+      }
+
+      .head {
+        position: absolute;
+        left: 218px;
+        top: 56px;
+        width: 112px;
+        height: 112px;
+        border: 6px solid #345342;
+        border-radius: 999px;
+      }
+
+      .body-line,
+      .arm,
+      .leg-a,
+      .leg-b {
+        position: absolute;
+        background: #345342;
+        border-radius: 999px;
+        transform-origin: left center;
+      }
+
+      .body-line {
+        left: 282px;
+        top: 165px;
+        width: 158px;
+        height: 16px;
+        transform: rotate(68deg);
+      }
+
+      .arm {
+        left: 336px;
+        top: 235px;
+        width: 150px;
+        height: 16px;
+        transform: rotate(-26deg);
+      }
+
+      .leg-a {
+        left: 360px;
+        top: 310px;
+        width: 158px;
+        height: 16px;
+        transform: rotate(31deg);
+      }
+
+      .leg-b {
+        left: 320px;
+        top: 300px;
+        width: 164px;
+        height: 16px;
+        transform: rotate(105deg);
+      }
+
+      .label {
+        position: absolute;
+        color: #8a7e6c;
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      .label.head-forward {
+        left: 96px;
+        top: 30px;
+      }
+
+      .label.shoulder-up {
+        left: 372px;
+        top: 140px;
+      }
+
+      .label.breath {
+        left: 420px;
+        top: 286px;
+      }
+
+      .brand {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 80px;
+        color: #345342;
+        font-size: 26px;
+        text-align: center;
+        letter-spacing: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>你不是肩膀爛，是身體一直在追螢幕</h1>
+      <div class="subtitle">螢幕拉近一點，肩頸不用那麼努力</div>
+      <div class="rule"></div>
+
+      <section class="scene" aria-label="久坐電腦姿勢圖示">
+        <div class="desk"></div>
+        <div class="monitor"></div>
+        <div class="head"></div>
+        <div class="body-line"></div>
+        <div class="arm"></div>
+        <div class="leg-a"></div>
+        <div class="leg-b"></div>
+        <div class="label head-forward">頭往前</div>
+        <div class="label shoulder-up">肩往上</div>
+        <div class="label breath">呼吸變淺</div>
+      </section>
+
+      <div class="brand">SEN BALANCE　森平衡</div>
+    </main>
+  </body>
+</html>
