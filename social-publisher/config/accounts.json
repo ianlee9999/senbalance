@@ -1,0 +1,73 @@
+{
+  "accounts": [
+    {
+      "id": "senbalance-instagram",
+      "brand": "森平衡",
+      "platform": "instagram",
+      "handle": "senbalance198",
+      "enabled": false,
+      "contentKey": "senbalanceInstagram",
+      "userIdEnv": "SENBALANCE_IG_USER_ID",
+      "tokenEnv": "SENBALANCE_IG_ACCESS_TOKEN"
+    },
+    {
+      "id": "senbalance-threads",
+      "brand": "森平衡",
+      "platform": "threads",
+      "handle": "senbalance198",
+      "enabled": false,
+      "contentKey": "senbalanceThreads",
+      "userIdEnv": "SENBALANCE_THREADS_USER_ID",
+      "tokenEnv": "SENBALANCE_THREADS_ACCESS_TOKEN"
+    },
+    {
+      "id": "senbalance-facebook-page",
+      "brand": "森平衡",
+      "platform": "facebook-page",
+      "handle": "facebook-page",
+      "enabled": false,
+      "contentKey": "senbalanceFacebook",
+      "userIdEnv": "FACEBOOK_PAGE_ID",
+      "tokenEnv": "FACEBOOK_PAGE_ACCESS_TOKEN"
+    },
+    {
+      "id": "kajinshu-instagram",
+      "brand": "咖筋舒運動按摩",
+      "platform": "instagram",
+      "handle": "kajinshu_massage",
+      "enabled": false,
+      "contentKey": "kajinshuInstagram",
+      "userIdEnv": "KAJINSHU_IG_USER_ID",
+      "tokenEnv": "KAJINSHU_IG_ACCESS_TOKEN"
+    },
+    {
+      "id": "ianlee-instagram",
+      "brand": "IanLee",
+      "platform": "instagram",
+      "handle": "ianlee9999",
+      "enabled": false,
+      "contentKey": "ianleeInstagram",
+      "userIdEnv": "IANLEE_IG_USER_ID",
+      "tokenEnv": "IANLEE_IG_ACCESS_TOKEN"
+    },
+    {
+      "id": "ianlee-threads",
+      "brand": "IanLee",
+      "platform": "threads",
+      "handle": "ianlee9999",
+      "enabled": false,
+      "contentKey": "ianleeThreads",
+      "userIdEnv": "IANLEE_THREADS_USER_ID",
+      "tokenEnv": "IANLEE_THREADS_ACCESS_TOKEN"
+    }
+  ],
+  "manualAccounts": [
+    {
+      "id": "ianlee-facebook-personal",
+      "brand": "IanLee",
+      "platform": "facebook-personal",
+      "handle": "李維培",
+      "reason": "Facebook personal profile publishing is not included in the first API path. Use manual posting unless a supported official route is confirmed."
+    }
+  ]
+}
